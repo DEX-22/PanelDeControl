@@ -1,0 +1,51 @@
+
+/*
+
+- Mobile: 375px
+- Desktop: 1440px
+
+*/
+body {
+    display: grid;
+    place-items: center;
+} 
+
+section {
+    width: 1200px;
+    height: 800px;
+    border: 1px black solid;
+    display: grid;
+    grid-template-columns: 25% auto;
+    grid-template-rows: auto;
+    grid-template-areas: "card-principal activities";
+    
+    place-items: center;
+}
+
+section > .card-principal{
+    grid-area: card-principal;
+    width: 256px;
+    height: 356px;
+    border: 1px red solid;
+    
+}
+.activities{
+    grid-area: activities;
+    width: 75%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    
+    place-items: center;
+}
+.activities div:nth-child(n){
+}
+.activities .card{
+    
+    width: 256px;
+    height: 200px;
+    border: 1px blue solid;
+}
+
+
