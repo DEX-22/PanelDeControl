@@ -1,3 +1,5 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+*/
 :root{
 
 --Blue: hsl(246, 80%, 60%);
@@ -8,23 +10,54 @@
 --exercise: hsl(145, 58%, 55%);
 --social: hsl(264, 64%, 52%);
 --self-care: hsl(43, 84%, 65%);
+--card-principal: rgba(87,70,234);
 
 --Very-dark-blue: hsl(226, 43%, 10%);
 --Dark-blue: hsl(235, 46%, 20%);
 --Desaturated-blue: hsl(235, 45%, 61%);
 --Pale-blue: hsl(236, 100%, 87%);
 
+
 --sm : 16px;
 --md: 18px;
 --lg : 20px;
+--big: 64px;
 
 }
+
 
 body{
-
+/*background-color: var(--Very-dark-blue)*/
 font-size: var(--md);
+font-family: 'Inter';
+color: #F0F0F0;
+}
+.card-principal{
+    background-color: var(--Blue);
 }
 
+.etiqueta{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow:hidden;
+    
+    background-color: var(--work);
+}
+.card{
+    background-color: var(--Dark-blue);
+    border-radius: 20px;
+    
+}
 
+.card span {
+    font-size: var(--big);
+    font-weight: 300;
+}
+.card p{
+    font-size: var(--sm);
+    color: var(--Pale-blue);
+}
 
-
+.activities .card p,span{
+        margin-left: 35px;
+}

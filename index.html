@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+    </style>  
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./CSS/styles.css">
   <link rel="stylesheet" href="./CSS/flex-grid.css">
@@ -19,15 +21,35 @@
 
 
   <section>
-    <div class="card-principal "></div>
-    <div class="activities">
-        <div class="card"></div>
+    <div class="container-card-principal">
+      <div class="etiqueta" id="etCardPrincipal"></div>
+      <div class="card-principal"></div>
+    </div>
+    <div class="container-activities">
+      <div class="activities">
+        
+        <div class="container-card">
+        <div class="etiqueta">
+          <img src="./images/icon-work.svg" alt="">
+        </div>
+        <div class="card" id="card_work">
+          
+          <div class="titulo"><h3>Work</h3><a href="#"><img src="./images/icon-ellipsis.svg"></a></div>
+          <span>5hrs</span>
+          <p>Previous - 7hrs</p>
+        </div>
+
+        </div>
+        
+        
         <div class="card"></div>
         <div class="card"></div>
         <div class="card"></div>
         <div class="card"></div>
         <div class="card"></div>
     </div>
+    </div>
+    
   </section>
 
 
