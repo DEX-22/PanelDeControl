@@ -11,19 +11,24 @@
   <link rel="stylesheet" href="./CSS/flex-grid.css">
   <title>Frontend Mentor | Time tracking dashboard</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
 
   <section>
     <div class="container-card-principal">
-      <div class="etiqueta" id="etCardPrincipal"></div>
-      <div class="card-principal"></div>
+      <div class="etiqueta" id="etCardPrincipal">
+        <ul>
+          <li><a href="#">Daily</a></li>
+          <li><a href="#">Weekly</a></li>
+          <li><a href="#">Monthly</a></li>
+        </ul>
+      </div>
+      <div class="card-principal">
+        <img src="./images/image-jeremy.png" alt="imagen de perfil de usuario">
+        <p><strong>Report for</strong></p>
+        <h2 id="name-user"></h2>
+      </div>
     </div>
     <div class="container-activities">
       <div class="activities">
@@ -34,8 +39,10 @@
         </div>
         <div class="card" id="card_work">
           
-          <div class="titulo"><h3>Work</h3><a href="#"><img src="./images/icon-ellipsis.svg"></a></div>
-          <span>5hrs</span>
+          <div class="titulo"><h3> 
+            <script></script>
+            </h3><a href="#"><img src="./images/icon-ellipsis.svg"></a></div>
+          <span>32hrs</span>
           <p>Previous - 7hrs</p>
         </div>
 
@@ -52,67 +59,14 @@
     
   </section>
 
-
-
-  Report for
-  Jeremy Robson
-
-  Daily
-  Weekly
-  Monthly
-
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
-
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
-
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
-
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
-
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script src="JS/app.js"></script>
+  <script src="JS/data.json"></script>
+  
 </body>
 </html>

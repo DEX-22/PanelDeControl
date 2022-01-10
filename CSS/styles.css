@@ -27,7 +27,7 @@
 
 
 body{
-/*background-color: var(--Very-dark-blue)*/
+background-color: var(--Very-dark-blue);
 font-size: var(--md);
 font-family: 'Inter';
 color: #F0F0F0;
@@ -46,7 +46,7 @@ color: #F0F0F0;
 .card{
     background-color: var(--Dark-blue);
     border-radius: 20px;
-    
+    cursor: pointer;
 }
 
 .card span {
@@ -61,3 +61,44 @@ color: #F0F0F0;
 .activities .card p,span{
         margin-left: 35px;
 }
+.card-principal{
+    border-radius: 20px;
+    cursor: pointer;
+}
+ #etCardPrincipal{
+    background-color: var(--Dark-blue);
+    border-radius: 0 0 20px 20px;
+ }
+ .card-principal p{
+     color: var(--Pale-blue);
+     font-size: 13px;
+ }
+ .card-principal img{
+    cursor: pointer;
+    border: 2px white solid;
+    border-radius: 40px;
+}
+.card-principal h2{
+    font-size: 40px;
+    margin-top: 0;
+}
+#etCardPrincipal{
+    padding-top:80px;
+}
+.etiqueta > ul{
+    list-style: none;
+    height: 144px;
+    
+}
+.etiqueta > ul li{
+    height: 40px;
+}
+ .etiqueta > ul li a{
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--Pale-blue);
+ }
+
+ .etiqueta > ul li>a:hover{
+     color: white;
+ }
